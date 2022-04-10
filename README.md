@@ -1,6 +1,13 @@
-# pink_acg
+# PinkApp-Gin
+
+
+#### 加QQ群进行交流：829704922
 
 这是PinkApp的前端文件
+
+需要搭配前端使用：https://github.com/Coder-ZhaoLu/Gin-PinkApp
+
+
 
 ### PinkApp的预览图：
 
