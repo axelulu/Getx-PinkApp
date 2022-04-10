@@ -99,7 +99,7 @@ class VideoCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            margin: EdgeInsets.only(bottom: setHeight(20)),
+            margin: EdgeInsets.only(bottom: setHeight(8)),
             child: Text(
               contentModel.title,
               maxLines: 2,

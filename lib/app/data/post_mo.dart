@@ -21,6 +21,8 @@ class PostMo {
   late String cover;
   late Collection video;
   late String download;
+  RecoPost? recoPost;
+  int? recoTimeStamp;
   late String createTime;
   late String updateTime;
 
@@ -42,6 +44,8 @@ class PostMo {
       this.cover = "",
       required this.video,
       this.download = "",
+      this.recoPost,
+      this.recoTimeStamp,
       this.createTime = "",
       this.updateTime = ""});
 
@@ -66,6 +70,9 @@ class PostMo {
         ? Collection.fromJson(jsonDecode(json['video']))
         : null)!;
     download = json['download'];
+    recoPost =
+        json['reco_post'] != null ? RecoPost.fromJson(json['reco_post']) : null;
+    recoTimeStamp = json['reco_time_stamp'];
     createTime = json['create_time'];
     updateTime = json['update_time'];
   }
@@ -91,8 +98,37 @@ class PostMo {
     data['cover'] = cover;
     data['video'] = video.toJson();
     data['download'] = download;
+    if (recoPost != null) {
+      data['reco_post'] = recoPost!.toJson();
+    }
+    data['reco_time_stamp'] = recoTimeStamp;
     data['create_time'] = createTime;
     data['update_time'] = updateTime;
+    return data;
+  }
+}
+
+class RecoPost {
+  String? click;
+  String? collect;
+  String? share;
+  String? read;
+
+  RecoPost({this.click, this.collect, this.share, this.read});
+
+  RecoPost.fromJson(Map<String, dynamic> json) {
+    click = json['click'];
+    collect = json['collect'];
+    share = json['share'];
+    read = json['read'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['click'] = click;
+    data['collect'] = collect;
+    data['share'] = share;
+    data['read'] = read;
     return data;
   }
 }

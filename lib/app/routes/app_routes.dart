@@ -36,6 +36,7 @@ abstract class Routes {
   static const PHOTO_DIA = _Paths.PHOTO_DIA;
   static const WEB = _Paths.WEB;
   static const WEB_BROWSER = _Paths.WEB_BROWSER;
+  static const RECOMMEND = _Paths.RECOMMEND;
 }
 
 abstract class _Paths {
@@ -71,4 +72,5 @@ abstract class _Paths {
   static const PHOTO_DIA = '/photo-dia';
   static const WEB = '/web';
   static const WEB_BROWSER = '/web-browser';
+  static const RECOMMEND = '/recommend';
 }

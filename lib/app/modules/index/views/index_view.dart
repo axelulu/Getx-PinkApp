@@ -8,6 +8,7 @@ import 'package:pink_acg/app/modules/dynamic/views/dynamic_view.dart';
 import 'package:pink_acg/app/modules/home/views/home_view.dart';
 import 'package:pink_acg/app/modules/profile/views/profile_view.dart';
 import 'package:pink_acg/app/modules/rank/views/rank_view.dart';
+import 'package:pink_acg/app/modules/recommend/views/recommend_view.dart';
 import 'package:pink_acg/app/util/screenutil.dart';
 
 import '../controllers/index_controller.dart';
@@ -16,10 +17,11 @@ class IndexView extends GetView<IndexController> {
   @override
   Widget build(BuildContext context) {
     controller.pages = [
+      RecommendView(),
       HomeView(),
       RankView(),
       DynamicView(),
-      ContactView(),
+      // ContactView(),
       ProfileView(),
     ];
     return Scaffold(
@@ -41,10 +43,11 @@ class IndexView extends GetView<IndexController> {
               unselectedFontSize: setSp(26),
               iconSize: setWidth(66),
               items: [
-                _bottomItem("首页", Icons.home, 0),
-                _bottomItem("排行", Icons.local_fire_department_outlined, 1),
-                _bottomItem("动态", Icons.sports_volleyball_outlined, 2),
-                _bottomItem("消息", Icons.notifications_outlined, 3),
+                _bottomItem("推荐", Icons.home, 0),
+                _bottomItem("分类", Icons.menu, 1),
+                _bottomItem("排行", Icons.local_fire_department_outlined, 2),
+                _bottomItem("动态", Icons.sports_volleyball_outlined, 3),
+                // _bottomItem("消息", Icons.notifications_outlined, 4),
                 _bottomItem("我的", Icons.account_circle_outlined, 4)
               ],
             )),

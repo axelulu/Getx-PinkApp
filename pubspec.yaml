@@ -16,6 +16,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   get: 4.3.8
+  get_cli: ^1.7.1
   vibration: ^1.7.4-nullsafety.0
   # 屏幕适配
   flutter_screenutil: ^5.0.0+2
