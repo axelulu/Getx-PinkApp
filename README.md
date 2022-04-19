@@ -1,11 +1,16 @@
-# PinkApp-Gin
+# Getx-PinkApp
 
 
 #### 加QQ群进行交流：829704922
 
-这是PinkApp的前端文件
+这是PinkApp的客户端文件
 
-需要搭配前端使用：https://github.com/Coder-ZhaoLu/Gin-PinkApp
+需要搭配后端使用：https://github.com/Coder-ZhaoLu/Gin-PinkApp
+
+
+也可以选择搭配推荐系统使用（推荐系统是基于cdh分布式环境搭建）
+
+搭配推荐系统使用：https://github.com/Coder-ZhaoLu/Recommend-PinkApp
 
 
 
